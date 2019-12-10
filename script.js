@@ -15,13 +15,10 @@ const divide = function (x, y) {
 }
 
 const operate = function (operator, x, y) {
-  if (operator === '+') {
-    return add(x, y)
-  } else if (operator === '-') {
-    return substract(x, y)
-  } else if (operator === '*') {
-    return multiply(x, y)
-  } else if (operator === '/') {
-    return divide(x, y)
+  switch (operator) {
+    case '+': return add(x, y);
+    case '-': return substract(x, y);
+    case '*': return multiply(x, y);
+    case '/': return divide(x, y);
   }
 }
