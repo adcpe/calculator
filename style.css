@@ -12,6 +12,39 @@ body {
   grid-row: 1;
 }
 
+.container {
+  height: 90vh;
+  width: 50vw;
+}
+
+#calculator {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(6, auto);
+  gap: 1vw;
+}
+
+#calculator div {
+  font-size: 8vh;
+  margin: auto;
+  border-radius: 3px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  height: 10vh;
+  width: 8vw;
+}
+
+.button:hover {
+  background-color: lightblue;
+}
+
 .backspace {
   grid-column: 1 / 3;
   grid-row: 2;
@@ -100,37 +133,4 @@ body {
 .plus {
   grid-column: 4;
   grid-row: 6;
-}
-
-.container {
-  height: 90vh;
-  width: 50vw;
-}
-
-#calculator {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-template-rows: repeat(6, auto);
-  gap: 1vw;
-}
-
-#calculator div {
-  font-size: 8vh;
-  margin: auto;
-  border-radius: 3px;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button {
-  height: 10vh;
-  width: 8vw;
-}
-
-.button:hover {
-  background-color: lightblue;
 }
