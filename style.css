@@ -55,7 +55,6 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   font-family: 'Digital-7';
-  font-size: 6vh;
   min-height: 15vh;
   grid-column: 1 / 5;
   grid-row: 1;
@@ -67,12 +66,15 @@ body {
   border: none !important;
 }
 
-.result {
+.operations {
+  font-size: 4vh;
+  color: lightsteelblue;
   grid-column: 1;
   grid-row: 1;
 }
 
-.operations {
+.result {
+  font-size: 6vh;
   grid-column: 1;
   grid-row: 2;
 }
