@@ -27,7 +27,6 @@ body {
 }
 
 #calculator div {
-  margin: auto;
   border-radius: 3px;
   border: 1px solid black;
 }
@@ -38,6 +37,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
 }
 
 .button:hover,
@@ -60,13 +60,20 @@ body {
   grid-row: 1;
   background-color: oldlace;
   text-align: right;
+  user-select: none;
 }
 
 .display div {
   border: none !important;
 }
 
+.result,
 .operations {
+  margin: auto 2vw auto auto;
+}
+
+.operations {
+  line-height: 4vh;
   font-size: 4vh;
   color: lightsteelblue;
   grid-column: 1;
