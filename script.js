@@ -9,28 +9,17 @@ const buttons           = document.querySelectorAll('.button');
 
 
 // MATH FUNCTIONS
-function add (x, y) {
-  return x + y;
-}
-
-function substract (x, y) {
-  return x - y;
-}
-
-function multiply (x, y) {
-  return x * y;
-}
-
-function divide (x, y) {
-  return x / y;
-}
+const add = (x, y) => x + y;
+const substract = (x, y) => x - y;
+const multiply = (x, y) => x * y;
+const divide = (x, y) => x / y;
 
 function operate (operator, x, y) {
   switch (operator) {
-    case '+': return add(x, y);
-    case '-': return substract(x, y);
-    case '*': return multiply(x, y);
-    case '/': return divide(x, y);
+    case '+': return add (x, y);
+    case '-': return substract (x, y);
+    case '*': return multiply (x, y);
+    case '/': return divide (x, y);
   }
 }
 
