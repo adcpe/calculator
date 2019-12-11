@@ -67,12 +67,12 @@ body {
   border: none !important;
 }
 
-.result,
-.operations {
+.upperDisp,
+.lowerDisp {
   margin: auto 2vw auto auto;
 }
 
-.operations {
+.upperDisp {
   line-height: 4vh;
   font-size: 4vh;
   color: lightsteelblue;
@@ -80,7 +80,7 @@ body {
   grid-row: 1;
 }
 
-.result {
+.lowerDisp {
   font-size: 6vh;
   grid-column: 1;
   grid-row: 2;
