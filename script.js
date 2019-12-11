@@ -43,6 +43,11 @@ calculator.addEventListener('click', function () {
     ex += lowerDisp.innerText.slice(0, -1);
     upperDisp.innerText += lowerDisp.textContent;
     lowerDisp.innerText = operate(ex.split(opSym)[1], Number(ex.split(opSym)[0]), Number(ex.split(opSym)[2]));
+    ex = lowerDisp.textContent;
+  }
+  if (upperDisp.textContent.slice(-1) === '=') {
+    upperDisp.innerText = lowerDisp.textContent;
+    lowerDisp.innerText = '0';
   }
 });
 
