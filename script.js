@@ -23,6 +23,9 @@ function operate (operator, x, y) {
   }
 }
 
+// OPERATIONS
+const dataKeys = [8, 13, 27, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 106, 107,
+  109, 111, 190];
 
 // DISPLAY FUNCTIONS
 const buttonsArray = Array.from(numButtons).concat(Array.from(opButtons));
